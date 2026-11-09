@@ -90,25 +90,43 @@
             <div class="image-window"><span class="window-dot"></span><span class="window-dot"></span><span class="window-dot"></span><div class="mock-line"></div><div class="mock-block"></div></div>
             <span class="project-number">01 / 03</span>
           </div>
-          <div class="project-meta"><div><p class="project-type">Product · UX/UI · 2024</p><h3>Lumen Finance</h3></div><span class="arrow-button">↗</span></div>
-          <p class="project-summary">흩어진 금융 경험을 하나로 연결한 개인 자산관리 서비스</p>
+          <div class="project-meta"><div><p class="project-type">Product · UX/UI · 2024</p><h3>Lumio</h3></div><span class="arrow-button">↗</span></div>
+          <p class="project-summary">일상 속 금융 정보를 정리하는 자산관리 서비스</p>
+          <button class="project-card-trigger" type="button" data-project="lumio" aria-label="Lumio 프로젝트 상세 정보 보기" aria-haspopup="dialog" aria-expanded="false"></button>
         </article>
         <article class="project-card reveal reveal-delay">
           <div class="project-image image-mori">
             <div class="mori-shape shape-large"></div><div class="mori-shape shape-small"></div><span class="project-number">02 / 03</span>
           </div>
-          <div class="project-meta"><div><p class="project-type">Branding · Digital · 2023</p><h3>Mori Studio</h3></div><span class="arrow-button">↗</span></div>
-          <p class="project-summary">일상의 속도를 늦추는 라이프스타일 브랜드 경험</p>
+          <div class="project-meta"><div><p class="project-type">Branding · Digital · 2023</p><h3>Mori</h3></div><span class="arrow-button">↗</span></div>
+          <p class="project-summary">차분한 일상을 제안하는 라이프스타일 브랜드</p>
+          <button class="project-card-trigger" type="button" data-project="mori" aria-label="Mori 프로젝트 상세 정보 보기" aria-haspopup="dialog" aria-expanded="false"></button>
         </article>
         <article class="project-card reveal reveal-delay-2">
           <div class="project-image image-nova">
-            <div class="nova-orbit"></div><div class="nova-core">N</div><span class="project-number">03 / 03</span>
+            <div class="nova-orbit"></div><div class="nova-core">O</div><span class="project-number">03 / 03</span>
           </div>
-          <div class="project-meta"><div><p class="project-type">Strategy · Service · 2022</p><h3>Nova Mobility</h3></div><span class="arrow-button">↗</span></div>
-          <p class="project-summary">도시의 이동을 새롭게 정의한 모빌리티 플랫폼</p>
+          <div class="project-meta"><div><p class="project-type">Strategy · Service · 2022</p><h3>Ondo Studio</h3></div><span class="arrow-button">↗</span></div>
+          <p class="project-summary">지역의 취향을 발견하는 큐레이션 서비스</p>
+          <button class="project-card-trigger" type="button" data-project="ondo" aria-label="Ondo Studio 프로젝트 상세 정보 보기" aria-haspopup="dialog" aria-expanded="false"></button>
         </article>
       </div>
     </section>
+
+    <div class="project-modal" id="project-modal" hidden>
+      <section class="project-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-description">
+        <button class="modal-close" type="button" aria-label="프로젝트 상세 정보 닫기">×</button>
+        <p class="modal-eyebrow">PROJECT DETAILS</p>
+        <h2 id="modal-title"></h2>
+        <p class="modal-description" id="modal-description"></p>
+        <p class="sample-notice">예시 데이터 · 아래 내용은 기능 시연을 위한 가상의 정보이며 실제 프로젝트 정보가 아닙니다.</p>
+        <dl class="modal-details">
+          <div><dt>담당 역할</dt><dd id="modal-role"></dd></div>
+          <div><dt>사용 기술</dt><dd><ul class="modal-technologies" id="modal-technologies"></ul></dd></div>
+          <div><dt>주요 성과</dt><dd id="modal-outcome"></dd></div>
+        </dl>
+      </section>
+    </div>
 
     <section class="contact section container" id="contact">
       <div class="contact-panel reveal">
